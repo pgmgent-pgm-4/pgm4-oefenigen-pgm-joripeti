@@ -1,14 +1,15 @@
 import React, {useState} from 'react'
 
-export default function Toggle() {
+export default function Toggle({ message }) {
     const [isVisible, setIsVisible] = useState(true);
     const toggleVisibility = () => {
-        setIsVisible((prev) => !prev);
+        // setIsVisible((prev) => !prev);
+        setIsVisible(!isVisible);
     }
   return (
     <div>
-        { isVisible && <h1>now you see me</h1> }
         <button onClick={toggleVisibility}>Toggle</button>
+        { isVisible && <h1>{ message }</h1> }
     </div>
   )
 }

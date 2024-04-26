@@ -1,11 +1,11 @@
-
+import logo from './logo.svg';
 import './App.css';
-import Toggle from './components/Toggle';
+import DimmedLight from './components/Light/DimmedLight';
 
 function App() {
   return (
     <div className="App">
-      <Toggle message="I see you"/>
+      <DimmedLight />
     </div>
   );
 }

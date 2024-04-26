@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+div {
+  margin: 5rem;
+}
+
+h1 {
+  max-width: 15%;
+  margin: 2rem auto;
+}
