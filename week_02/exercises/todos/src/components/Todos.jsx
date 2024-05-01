@@ -9,15 +9,17 @@ export default function Todos({ todo }) {
         'Buy bread',
         'Buy cheese' 
     ]);
+    
     // Function to add a new todo
-  const addTodo = newTodo => {
-    setTodos(prevTodos => [...prevTodos, newTodo]);
-  };
+    const addTodo = newTodo => {
+      setTodos(prevTodos => [...prevTodos, newTodo]);
+    };
 
-  // Function to remove a todo based on index
-  const removeTodo = index => {
-    setTodos(prevTodos => prevTodos.filter((_, i) => i !== index));
-  };
+    // Function to remove a todo based on index
+    const removeTodo = index => {
+      setTodos(prevTodos => prevTodos.filter((_, i) => i !== index));
+    };
+
   return (
     <div>
         <h1>Todos</h1>
